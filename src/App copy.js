@@ -15,7 +15,7 @@ function Nav(props) {
     let t = props.topics[i];
     lis.push(<li key={t.id}><a href={'/read/'+t.id}>{t.title}</a></li>)
   }
-  return (
+  return ( //괄호 없애고 <nav> 태그를 () 자리에 옮겨야함.
     <nav>
       <ol>
         {lis}  
